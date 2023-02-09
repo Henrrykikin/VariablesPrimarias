@@ -36,5 +36,23 @@ public class ConversiónDeTipos {
 
         otroNumeroStr = String.valueOf(otroNumeroInt+10);//sobrecarga de métodos
         System.out.println("otroNumeroStr = " + otroNumeroStr);
+
+        double otroRealDouble = 1.23456e2;
+        String otroRealStr = Double.toString(otroRealDouble);
+        System.out.println("otroRealStr = " + otroRealStr);
+        
+        otroRealStr = String.valueOf(1.23456e2f);
+        System.out.println("otroRealStr = " + otroRealStr);
+        
+        //de primitivos a primitivos (solo del mismo tipo compatible, no de in a boolean o a char pues arroja información relacionada con el unicode)
+        int i = 32768;
+        short s = (short)i; //utilizando cast para forzar la conversión. Al rebasar un numero que exceda 32767 para el caso de los long, habrá pérdida de información.
+        System.out.println("s = " + s);
+        long l = i; // se puede sin perder información
+        System.out.println("l = " + l);
+        System.out.println(Short.MAX_VALUE);
+
+
     }
+    
 }

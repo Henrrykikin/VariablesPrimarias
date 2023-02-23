@@ -23,17 +23,18 @@ public class EjemploStringMetodos {
         System.out.println("trabalenguas.replace(\"a\",\".\") = " + trabalenguas.replace("a", "."));
         System.out.println("trabalenguas = " + trabalenguas);
         System.out.println("trabalenguas.indexOf('a') = " + trabalenguas.indexOf('a')); //retorna la primera posición en la que se encuentra el valor buscado
-        System.out.println("trabalenguas.lastIndexOf('a') = " + trabalenguas.lastIndexOf('a'));
+        System.out.println("trabalenguas.lastIndexOf('a') = " + trabalenguas.lastIndexOf('a')); // retorna la últimaposición en la que encuentre el valor buscado
         System.out.println("trabalenguas.indexOf('z') = " + trabalenguas.indexOf('z'));
         System.out.println("trabalenguas.indexOf('t') = " + trabalenguas.indexOf('t'));
-        System.out.println("trabalenguas.contains(\"t\") = " + trabalenguas.contains("t"));
+        System.out.println("trabalenguas.contains(\"t\") = " + trabalenguas.contains("t")); //Para indicar si el string contiene el caracter buscado
         System.out.println("trabalenguas.contains(\"z\") = " + trabalenguas.contains("z"));
-        System.out.println("trabalenguas.contains(\"lenguas\") = " + trabalenguas.contains("lenguas"));
+        System.out.println("trabalenguas.contains(\"lenguas\") = " + trabalenguas.contains("lenguas")); //para indicar si el string contiene la cadena buscada
         System.out.println("trabalenguas.startsWith(\"lenguas\") = " + trabalenguas.startsWith("lenguas"));
-        System.out.println("trabalenguas.startsWith(\"traba\") = " + trabalenguas.startsWith("traba"));
-        System.out.println("trabalenguas.endsWith(\"traba\") = " + trabalenguas.endsWith("traba"));
+        System.out.println("trabalenguas.startsWith(\"traba\") = " + trabalenguas.startsWith("traba")); // Para indicar si el string iniciacon la cadena buscada
+        System.out.println("trabalenguas.endsWith(\"traba\") = " + trabalenguas.endsWith("traba")); //Para indicar si el string termina con la cadena buscada
         System.out.println("trabalenguas.endsWith(\"lenguas\") = " + trabalenguas.endsWith("lenguas"));
         System.out.println("    trabalenguas");
         System.out.println("   trabajenguas ".trim()); //Quita espacios en blanco
+
     }
 }
